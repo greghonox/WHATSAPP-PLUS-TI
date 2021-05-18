@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="img">
+    <file>setting.svg</file>
+    <file>picture.svg</file>
+    <file>registro.svg</file>
+    <file>logo plusti.jpeg</file>
+    <file>cancel.svg</file>
+    <file>depositphotos_190770396-stock-illustration-colorful-watercolor-spots-hand-drawn.jpg</file>
+    <file>help.svg</file>
+    <file>arquivos.svg</file>
+    <file>whatsapp-logo.svg</file>
+    <file>letter.svg</file>
+    <file>prancheta.svg</file>
+    <file>help.svg</file>
+    <file>negocios-e-financas.svg</file>
+    <file>pensando.svg</file>
+    <file>sinais.svg</file>
+    <file>logo.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,7 @@
+{
+    "mensagem": "Esta mensagem é para você {nome_contato}. Siga o anexo e tenha mais informações",
+    "caminho_csv": "C:/Users/Plus-TI/Documents/Projetos/WHATSAPP PLUS TI/setup/recursos/Testes.csv",
+    "caminho_anexo": "C:/Users/Plus-TI/Documents/Projetos/WHATSAPP PLUS TI/setup/recursos/WhatsApp Image 2021-02-02 at 11.16.52.jpeg",
+    "tempo_espera": 5,
+    "tempo_maximo": 5
+}

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>608</width>
+    <height>728</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>608</width>
+    <height>728</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>608</width>
+    <height>728</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>PLUS-TI -- AUTOMACAO DE ENVIO DE MENSAGEM</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#parar, #comecar{
+	border-radius: 10px;
+	color: #ffffff;
+	background-color: rgb(0, 255, 0);
+	border: 1px solid rgb(40, 40, 40);
+	border-color: rgb(0, 0, 0);
+}
+
+#parar{
+	border-radius: 10px;
+	color: #ffffff;
+	background-color: rgb(255, 0, 0);
+	border: 1px solid rgb(40, 40, 40);
+	border-color: rgb(0, 0, 0);
+}
+
+#widget_2{
+background-color: rgb(255, 255, 255);
+}
+
+QTabWidget:pane, QTabBar::tab{
+border: 1px solid gray;
+background-color: rgb(255, 255, 255);
+}
+
+#caminho_csv, #caminho_anexo{
+font: 87 10pt &quot;Arial Black&quot;;
+}
+
+QTabBar::tab:selected {
+background-color: rgb(225, 255, 220);
+font: 87 10pt &quot;Arial Black&quot;;
+}
+
+QTabBar::tab{
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+}
+
+#console{
+background-color: rgb(0, 0, 0);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 0, 0);
+}
+
+#tab, #tab_2, #tab_4, #widget_3, #widget_4, #widget_5{
+background-color: rgb(225, 255, 220);
+}
+
+#frame, #widget, #textEdit_2{
+background-color: rgb(255, 255, 255);
+}
+
+#label{
+image: url(:/img/logo.png);
+}
+
+#label_2{
+image: url(:/img/logo plusti.jpeg);
+}
+
+#label_3{
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+}
+
+#label_3, #label_2, #label, #carregar_anexo, #carregar_lista, #apagar_configuracao{
+border: none;
+background-color: rgb(255, 255, 255);
+}
+
+#mensagem{
+background-color: rgb(255, 255, 255);
+}
+
+#sobre, #mensagem_2{ 
+background-color: rgb(200, 200, 200);
+}
+
+*{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+border: 1px solid gray;
+background-color: rgb(220, 220, 220);
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>117</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>16</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>ENVIO MENSAGEM WHATSAPP</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>58</width>
+          <height>117</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;SE PRECISA DA MINHA AJUDA CLIQUE DUAS VEZES AQUI!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::RichText</enum>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <property name="indent">
+         <number>-1</number>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::NoTextInteraction</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QToolButton" name="carregar_anexo">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Selecione uma imagem para envio, suportada pelo whatsapp&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../IMG/recursos.qrc">
+          <normaloff>:/img/picture.svg</normaloff>:/img/picture.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>63</width>
+          <height>59</height>
+         </size>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::DelayedPopup</enum>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonIconOnly</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="carregar_lista">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Selecione o arquivo txt para envio. Lembre-se o formato das linhas são: telefone contato; nome contato&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../IMG/recursos.qrc">
+          <normaloff>:/img/arquivos.svg</normaloff>:/img/arquivos.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>63</width>
+          <height>59</height>
+         </size>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::DelayedPopup</enum>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonIconOnly</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="apagar_configuracao">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;APAGUE TODA A CONFIGURAÇÃO FEITA&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../IMG/recursos.qrc">
+          <normaloff>:/img/cancel.svg</normaloff>:/img/cancel.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>63</width>
+          <height>59</height>
+         </size>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::DelayedPopup</enum>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonIconOnly</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;REALIZE ALGUNS AJUSTES PARA MELHOR EFICIENCIA&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::East</enum>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="icon">
+       <iconset resource="../IMG/recursos.qrc">
+        <normaloff>:/img/negocios-e-financas.svg</normaloff>:/img/negocios-e-financas.svg</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>PROGRESSO</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPlainTextEdit" name="mensagem">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Você pode preencher o campo de texto de forma livre. Para chamar referencia do contato utilize {nome_contato} para concaternar com o texto.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="plainText">
+          <string>Seu texto posicionando o {nome_contato} para realizar o disparo sitando o nome do contato...</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="icon">
+       <iconset resource="../IMG/recursos.qrc">
+        <normaloff>:/img/setting.svg</normaloff>:/img/setting.svg</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>CONF</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QWidget" name="widget_3" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QPlainTextEdit" name="mensagem_2">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Você pode preencher o campo de texto de forma livre. Para chamar referencia do contato utilize {nome_contato} para concaternar com o texto.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="plainText">
+             <string>Configure para ter um desempenho ajustavel.
+O numero máximo de disparos até acontecer a pausa.
+O tempo de pausa é exatamento o tempo de espera que o robô fará.</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_4" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="caminho_csv">
+            <property name="text">
+             <string>CAMINHO DO CSV</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="caminho_anexo">
+            <property name="text">
+             <string>CAMINHO DO ANEXO</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_5" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;TEMPO DE ESPERA NA PAUSA&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="text">
+               <string>TEMPO ESPERA</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="tempo_espera">
+              <property name="styleSheet">
+               <string notr="true">TEMPO DE ESPERA NA PAUSA</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::PlusMinus</enum>
+              </property>
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;QUANTIDADE QUE SERÁ FEITO O DISPARA ATÉ A PAUSA.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="text">
+               <string>QUANTIDADE MAXIMA</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="tempo_maximo">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;QUANTIDADE QUE SERÁ FEITO O DISPARA ATÉ A PAUSA.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::PlusMinus</enum>
+              </property>
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="icon">
+       <iconset resource="../IMG/recursos.qrc">
+        <normaloff>:/img/help.svg</normaloff>:/img/help.svg</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>SOBRE</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QPlainTextEdit" name="sobre">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="plainText">
+          <string>Somos a Plus-TI.
+
+Ferramenta de disparo pelo whatsapp.
+
+Instruções de uso dessa ferramenta:
+Selecione uma lista com o formato: 
+numero telefone; nome do contato
+Arquivo em formato texto.
+
+Selecione uma imagem suportada pelo whastapp.
+
+Texto:
+Você pode preencher o campo de texto de forma livre. Para chamar referencia do contato utilize {nome_contato} para concaternar com o texto.</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QToolButton" name="parar">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Para o envio das mensagens.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>PARAR</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>63</width>
+          <height>59</height>
+         </size>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::DelayedPopup</enum>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonIconOnly</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="comecar">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Vamos começar? Pressione aqui depois de carregar a lista de contatos.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>COMEÇAR</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>63</width>
+          <height>59</height>
+         </size>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::DelayedPopup</enum>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonIconOnly</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="console">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Log dos eventos&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>PLUST-TI -- TECNOLOGIA DA INFORMAÇÃO</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../IMG/recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
